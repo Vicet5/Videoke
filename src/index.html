@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videokê</title>
+    <style>
+      :root {
+        --rosa-intenso: #ec4899;
+        --preto: #000000;
+        --rosa-suave: #fce4ec;
+        --cinza-escuro: #333333;
+        --branco: #ffffff;
+      }
+
+      body {
+        color: var(--cinza-escuro);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1,
+      .nome-musica {
+        color: var(--rosa-intenso);
+      }
+
+      h2 {
+        color: var(--preto);
+      }
+
+      p {
+        color: var(--cinza-escuro);
+      }
+
+      button {
+        color: var(--rosa-intenso);
+      }
+
+      .item-musica {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .nome-musica {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Videokê</h1>
+
+      <section aria-labelledby="biblioteca-de-musicas">
+        <h2 id="biblioteca-de-musicas">Biblioteca de músicas</h2>
+        <p>Selecione a pasta onde estão guardadas as músicas para montar um catálogo.</p>
+        <button type="button" id="selecionar-pasta">Selecionar pasta</button>
+      </section>
+
+      <section aria-labelledby="catalogo-de-musicas">
+        <h2 id="catalogo-de-musicas">Catálogo de músicas</h2>
+        <p>Selecione uma música da lista para preparar sua apresentação.</p>
+        <ul id="catalogo-musicas">
+          <li class="item-musica">
+            <h3 class="nome-musica">Nome da música</h3>
+            <button type="button" class="escolher-musica">
+              Escolher esta música
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
