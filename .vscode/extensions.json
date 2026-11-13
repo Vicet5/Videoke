@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "ritwickdey.liveserver",
+    "marp-team.marp-vscode",
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+    "ms-ceintl.vscode-language-pack-pt-br"
+  ]
+}

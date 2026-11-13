@@ -1,0 +1,25 @@
+{
+  "name": "videoke",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.2 <25"
+  },
+  "scripts": {
+    "setup": "node setup/setup.mjs",
+    "lint": "eslint --no-error-on-unmatched-pattern \"src/**/*.js\" \"tests/**/*.js\" \"setup/**/*.mjs\" eslint.config.mjs",
+    "lint:fix": "eslint --no-error-on-unmatched-pattern \"src/**/*.js\" \"tests/**/*.js\" \"setup/**/*.mjs\" eslint.config.mjs --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10"
+  },
+  "overrides": {
+    "minimatch": "^11.0.5"
+  }
+}
